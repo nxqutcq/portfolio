@@ -8,8 +8,14 @@
     background: gray;
 }
 
-.photo {
+.photoContainer {
     width: 300px;
     height: 400px;
     background: chartreuse;
+    align-items: center;
+    display: flex;
+}
+.photo {
+    width: 100%;
+    height: auto;
 }

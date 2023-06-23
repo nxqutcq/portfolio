@@ -1,0 +1,17 @@
+.titleDescriptionBlock {
+    display: flex;
+    background: crimson;
+    flex-direction: column;
+    width: 100%;
+}
+.projectContainer {
+    display: flex;
+    flex-direction: column;
+    background: #d58c98;
+    justify-content: flex-start;
+    width: 100%;
+}
+.imgContainer {
+    width: 100%;
+    display: flex;
+}
