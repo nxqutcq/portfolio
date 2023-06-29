@@ -20,12 +20,6 @@ export const Projects = () => {
         },
         {
             id: v1(),
-            name: "Project3",
-            description: "Vel consectetur ipsa est vel consectetur ipsa est tenetur aliquid ad numquam ipsam et voluptas sapiente.",
-            imageLink: "https://kantata.marketing/wp-content/uploads/2023/01/project.jpg"
-        },
-        {
-            id: v1(),
             name: "Project4",
             description: "Sit reprehenderit eaque id consequatur ut laudantium enim et nihil rerum a autem deleniti",
             imageLink: "https://www.projectaccelerator.co.uk/wp-content/uploads/2016/08/Project-Management.jpg"

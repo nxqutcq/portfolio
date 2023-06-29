@@ -12,6 +12,7 @@ export const Project: React.FC<ProjectPropsType> = ({title, description, img}) =
         <div className={style.projectContainer}>
             <div className={style.imgContainer}>
                 <img className={style.projectPicture} src={img} alt="project_photo"/>
+                <a className={style.viewButton}>View</a>
             </div>
             <div className={style.titleDescriptionBlock}>
                 <span>{title}</span>

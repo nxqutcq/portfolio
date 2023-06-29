@@ -1,5 +1,5 @@
 .footerBlock {
-    height: 25vh;
+    height: 20vh;
     background: teal;
     display: flex;
     flex-direction: column;
@@ -7,7 +7,7 @@
 .socialNetwork {
     display: flex;
     flex-direction: row;
-    width: 500px;
+    width: min-content;
     background: gold;
     justify-content: space-between;
 }
