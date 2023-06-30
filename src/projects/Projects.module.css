@@ -12,6 +12,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    box-sizing: border-box;
 }
 .title {
     background: #0256b4;

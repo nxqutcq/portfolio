@@ -12,6 +12,8 @@
     background: #d58c98;
     justify-content: flex-start;
     width: 300px;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .imgContainer {
@@ -23,10 +25,20 @@
     height: 100%;
     width: 100%;
 }
+
 .viewButton {
     background: yellow;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.title {
+    background: indigo;
+    color: wheat;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.description {
+    background: mediumspringgreen;
 }
