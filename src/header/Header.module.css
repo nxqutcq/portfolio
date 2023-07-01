@@ -1,6 +1,6 @@
 .header {
     height: 80px;
-    background: cornflowerblue;
+    background: #0c182d;
     display: flex;
     justify-content: flex-end;
     align-items: center;

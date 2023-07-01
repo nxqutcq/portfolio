@@ -1,14 +1,40 @@
 .footerBlock {
     min-height: 20vh;
     background: teal;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
+
 .socialNetwork {
     display: flex;
     flex-direction: row;
     background: gold;
-    width: 50%;
+    min-width: 25%;
     justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.name {
+    background: #2e4b69;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.rights {
+    background: bisque;
+    padding: 10px;
+    box-sizing: border-box;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+
+.footerContainer {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background: #9b5e16;
+    align-items: center;
+    justify-content: center;
 }

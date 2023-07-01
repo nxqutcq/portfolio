@@ -1,6 +1,8 @@
 .projectsBlock {
     min-height: 80vh;
     background: #6682a1;
+    padding-bottom: 20px;
+    box-sizing: border-box;
 }
 .projectsContainer {
     flex-direction: column;

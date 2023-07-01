@@ -2,7 +2,6 @@
     display: flex;
     background: crimson;
     flex-direction: column;
-    text-align: center;
     height: 100%;
 }
 
@@ -32,13 +31,20 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: black;
 }
 .title {
     background: indigo;
     color: wheat;
     padding: 5px;
     box-sizing: border-box;
+    justify-content: flex-start;
+    display: flex;
 }
 .description {
     background: mediumspringgreen;
+    justify-content: flex-start;
+    display: flex;
+    padding: 5px;
+    box-sizing: border-box;
 }

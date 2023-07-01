@@ -1,11 +1,11 @@
 .mainBlock {
     height: 100vh;
-    background: #d58c98;
+    background: #1d7e83;
 }
 
 .greeting {
     width: 300px;
-    background: gray;
+    background: rgba(6, 19, 68, 0.4);
 }
 
 .photoContainer {
@@ -16,5 +16,4 @@
 }
 .photo {
     width: 100%;
-    height: auto;
 }

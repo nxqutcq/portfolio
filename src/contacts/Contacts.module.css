@@ -1,21 +1,25 @@
 .contactsBlock {
-    min-height: 40vh;
+    min-height: 60vh;
     background: #254433;
+    padding-top: 20px;
+    box-sizing: border-box;
 }
 
 .contactsContainer {
     flex-direction: column;
     justify-content: flex-start;
     background: darkslategrey;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .form {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
-    width: 80%;
+    width: 100%;
     align-items: center;
-    background: #badc9b;
+    background: #10e310;
     box-sizing: border-box;
 }
 
@@ -38,4 +42,8 @@
 }
 .title {
     background: lightcyan;
+}
+.sendBtn {
+    background: lightcyan;
+    box-sizing: border-box;
 }

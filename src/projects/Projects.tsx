@@ -30,7 +30,7 @@ export const Projects = () => {
     return (
         <div className={style.projectsBlock}>
             <div className={`${styleContainer.container} ${style.projectsContainer}`}>
-                <div><h2 className={style.title}>Projects</h2></div>
+                <h2 className={style.title}>Projects</h2>
                 <div className={style.projects}>
                     {projects.map((project) => (
                         <Project

@@ -20,8 +20,8 @@ export const Footer = () => {
 
     return (
         <div className={style.footerBlock}>
-            <div className={`${styleContainer.container} ${style.footerBlock}`}>
-                <div>Vladislav Nelipovich</div>
+            <div className={`${styleContainer.container} ${style.footerContainer}`}>
+                <div className={style.name}>Vladislav Nelipovich</div>
                 <div className={style.socialNetwork}>
                     {
                         socialNetworks.map((socialNetwork) => (
@@ -29,7 +29,7 @@ export const Footer = () => {
                         ))
                     }
                 </div>
-                <div>© 2023 All Rights Reserved.</div>
+                <div className={style.rights}>© 2023 All Rights Reserved.</div>
             </div>
         </div>
     )
