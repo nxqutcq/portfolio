@@ -3,19 +3,28 @@
     background: teal;
 }
 
+.footerContainer {
+    flex-direction: column;
+    box-sizing: border-box;
+    background: #9b5e16;
+    width: 280px;
+}
+
 .socialNetwork {
     display: flex;
     flex-direction: row;
     background: gold;
-    min-width: 25%;
+    width: 100%;
     justify-content: space-between;
     box-sizing: border-box;
+    margin-bottom: 20px;
 }
 
 .name {
     background: #2e4b69;
     padding: 10px;
     box-sizing: border-box;
+    margin-bottom: 20px;
 }
 
 .rights {
@@ -26,15 +35,5 @@
     justify-content: center;
     align-items: center;
     display: flex;
-    width: 100%;
 }
 
-.footerContainer {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    background: #9b5e16;
-    align-items: center;
-    justify-content: center;
-}
