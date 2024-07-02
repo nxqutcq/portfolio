@@ -11,14 +11,14 @@ const Navbar: React.FC<{ scrollRefs: ScrollRefs }> = ({ scrollRefs }) => {
   ]
 
   return (
-    <nav className="flex mt-1">
+    <nav className="flex">
       {navLinks.map((link) => (
         <a
           key={link.label}
           onClick={() =>
             link.ref.current?.scrollIntoView({ behavior: 'smooth' })
           }
-          className="p-3 cursor-pointer hover:bg-gray-700 transition-colors duration-200 rounded-md"
+          className="p-3 cursor-pointer hover:bg-white/30 transition-colors duration-200 rounded-md"
         >
           {link.label}
         </a>
