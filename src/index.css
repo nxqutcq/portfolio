@@ -66,3 +66,6 @@ html {
 .skill-container {
   @apply flex flex-col items-center hover:bg-white/30 rounded-md p-2 duration-200;
 }
+a {
+  user-select: none;
+}
