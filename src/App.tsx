@@ -27,7 +27,7 @@ export const App = () => {
         <header className="z-50 bg-black/40 py-2 fixed flex flex-col w-screen items-center">
           <Navbar scrollRefs={scrollRefs} />
         </header>
-        <div className="flex flex-row w-full xs1:gap-x-[25%] xs:gap-x-[5%] items-center container justify-center mt-[13rem]">
+        <div className="flex flex-row w-full xs1:gap-x-[20%] px-5 xs:gap-x-[5%] items-center container justify-center mt-[13rem]">
           <div className="h-fit flex flex-col">
             <span>Hi there!</span>
             <h1 className="text-2xl">I'm Vladislav Nelipovich</h1>
@@ -49,7 +49,7 @@ export const App = () => {
       </div>
       <div
         ref={projectRef}
-        className="box second-image items-center flex gap-5 justify-center bg-black/60"
+        className="box xs:flex-col md:flex-row second-image items-center flex gap-5 justify-center bg-black/60"
       >
         <a
           href="https://free2play-games.netlify.app/"
@@ -64,10 +64,10 @@ export const App = () => {
             />
           </div>
           <div>
-            <h3 className="my-2">FreeToGame</h3>
+            <h3 className="my-2 text-lg">FreeToGame</h3>
             <span>Description</span>
             <br />
-            <div className="flex flex-wrap gap-2 mt-2">
+            <div className="flex flex-wrap gap-2 mt-2 text-sm">
               <div className="p-1 px-2 border rounded-lg">React</div>
               <div className="p-1 px-2 border rounded-lg">TS</div>
               <div className="p-1 px-2 border rounded-lg">TanStack Query</div>
@@ -88,10 +88,10 @@ export const App = () => {
             />
           </div>
           <div>
-            <h3 className="my-2">News Tracker</h3>
+            <h3 className="my-2 text-lg">News Tracker</h3>
             <span>Description</span>
             <br />
-            <div className="flex flex-wrap gap-2 mt-2">
+            <div className="flex flex-wrap gap-2 mt-2 text-sm">
               <div className="p-1 px-2 border rounded-lg">React</div>
               <div className="p-1 px-2 border rounded-lg">TS</div>
               <div className="p-1 px-2 border rounded-lg">RTK</div>
