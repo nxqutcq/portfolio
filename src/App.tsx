@@ -114,7 +114,7 @@ export const App = () => {
             href="https://www.linkedin.com/in/vladislav-nelipovich-084aa118a/"
             target="_blank"
             rel="noopener noreferrer"
-            className="max-w-[30px] cursor-pointer max-h-[30px]"
+            className="max-w-[2rem] cursor-pointer max-h-[2rem]"
           >
             <svg
               width="100%"
@@ -133,7 +133,7 @@ export const App = () => {
             href="https://t.me/vladnel671"
             target="_blank"
             rel="noopener noreferrer"
-            className="max-w-[30px] cursor-pointer max-h-[30px]"
+            className="max-w-[2rem] cursor-pointer max-h-[2rem]"
           >
             <svg
               fill="#fff"
@@ -150,7 +150,7 @@ export const App = () => {
             href="https://github.com/Vladnel671"
             target="_blank"
             rel="noopener noreferrer"
-            className="max-w-[30px] cursor-pointer max-h-[30px]"
+            className="max-w-[2rem] cursor-pointer max-h-[2rem]"
           >
             <svg
               width="100%"
