@@ -29,6 +29,8 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+
+  font-family: 'Comic Neue', fallback, sans-serif;
 }
 
 html {
@@ -94,4 +96,11 @@ html {
   z-index: -1;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@font-face {
+  font-family: 'Comic Neue';
+  font-style: normal;
+  src: url('./assets/fonts/MabryPro-Light.woff2') format('woff2');
+  font-display: swap;
 }
