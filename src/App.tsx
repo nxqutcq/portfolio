@@ -34,7 +34,7 @@ export const App = () => {
             <span>Frontend Developer</span>
           </div>
           <div>
-            <div className="max-w-[13rem] overflow-hidden rounded-full">
+            <div className="max-w-[13rem] animate-float-up overflow-hidden rounded-full">
               <img
                 draggable={false}
                 src="https://sun23-2.userapi.com/impf/c844617/v844617904/200033/oAT8xJ6LLDQ.jpg?size=1600x1600&quality=96&sign=4dd0eb4d7aa64ae246dddc15eb060c65&type=album"
