@@ -102,7 +102,7 @@ export const App = () => {
       </div>
       <div ref={contactsRef} className="box items-center justify-center">
         <a
-          className="mt-20 p-5 border rounded-md"
+          className="p-5 border rounded-md"
           href="mailto:vnelipovich63@gmail.com"
         >
           Say hello
