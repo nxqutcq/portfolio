@@ -59,7 +59,7 @@ export const App = () => {
         >
           <div className="project-picture">
             <img
-              src="../src/assets/photos/2HvZEbLds4g.webp"
+              src="https://sun9-16.userapi.com/impg/mnFAWoTGDYlfx2uxH1delRuStSANNLChTJqXiA/2HvZEbLds4g.jpg?size=1861x919&quality=96&sign=ac0baf502e64117c9ec8244e118c1fd7&type=album"
               alt="my-project-preview"
             />
           </div>
@@ -83,7 +83,7 @@ export const App = () => {
         >
           <div className="project-picture">
             <img
-              src="../src/assets/photos/0LaK5-KtOXk.webp"
+              src="https://sun9-61.userapi.com/impg/I9Bmm6-6Jy5W0Y8n9FKqjHz_Zj6l1Iwg8xeXSw/0LaK5-KtOXk.jpg?size=1920x922&quality=96&sign=36ed7630a675216ca9badd6bc776501b&type=album"
               alt="my-project-preview"
             />
           </div>
