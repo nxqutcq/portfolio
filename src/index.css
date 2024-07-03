@@ -115,3 +115,18 @@ img {
   src: url('./assets/fonts/MabryPro-Light.woff2') format('woff2');
   font-display: swap;
 }
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-float-up {
+  animation: floatUp 0.8s ease;
+}

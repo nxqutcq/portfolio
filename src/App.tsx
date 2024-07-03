@@ -28,8 +28,8 @@ export const App = () => {
           <Navbar scrollRefs={scrollRefs} />
         </header>
         <div className="flex flex-row w-full xs1:gap-x-[20%] px-5 xs:gap-x-[5%] items-center container justify-center mt-[13rem]">
-          <div className="h-fit flex flex-col">
-            <span>Hi there!</span>
+          <div className="h-fit flex gap-4 animate-float-up flex-col">
+            <span className='animate-pulse'>Hi there!</span>
             <h1 className="text-2xl">I'm Vladislav Nelipovich</h1>
             <span>Frontend Developer</span>
           </div>
@@ -63,11 +63,13 @@ export const App = () => {
               alt="my-project-preview"
             />
           </div>
-          <div>
+          <div className=" max-w-[240px]">
             <h3 className="my-2 text-lg">FreeToGame</h3>
-            <span>Description</span>
+            <span className='text-sm'>
+              Track what you've played and search for what to play next!
+            </span>
             <br />
-            <div className="flex flex-wrap gap-2 mt-2 text-sm">
+            <div className="flex flex-wrap gap-2 mt-3 text-sm">
               <div className="p-1 px-2 border rounded-lg">React</div>
               <div className="p-1 px-2 border rounded-lg">TS</div>
               <div className="p-1 px-2 border rounded-lg">TanStack Query</div>
@@ -87,11 +89,11 @@ export const App = () => {
               alt="my-project-preview"
             />
           </div>
-          <div>
+          <div className=" max-w-[240px]">
             <h3 className="my-2 text-lg">News Tracker</h3>
-            <span>Description</span>
+            <span className='text-sm'>Stay informed with the latest news</span>
             <br />
-            <div className="flex flex-wrap gap-2 mt-2 text-sm">
+            <div className="flex flex-wrap gap-2 mt-3 text-sm max-w-[240px]">
               <div className="p-1 px-2 border rounded-lg">React</div>
               <div className="p-1 px-2 border rounded-lg">TS</div>
               <div className="p-1 px-2 border rounded-lg">RTK</div>
@@ -108,7 +110,7 @@ export const App = () => {
           Say hello
         </a>
       </div>
-      <footer ref={socialsRef} className="">
+      <footer ref={socialsRef}>
         <div className="box items-end justify-center p-10 flex gap-10">
           <a
             href="https://www.linkedin.com/in/vladislav-nelipovich-084aa118a/"
