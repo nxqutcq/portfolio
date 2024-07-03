@@ -100,14 +100,16 @@ export const App = () => {
           </div>
         </a>
       </div>
-      <div ref={contactsRef} className="box">
-        contacts
-        <a className="pt-20" href="mailto:vnelipovich63@gmail.com">
+      <div ref={contactsRef} className="box items-center justify-center">
+        <a
+          className="mt-20 p-5 border rounded-md"
+          href="mailto:vnelipovich63@gmail.com"
+        >
           Say hello
         </a>
       </div>
       <footer ref={socialsRef} className="">
-        <div className="box items-end justify-center p-5 flex gap-5">
+        <div className="box items-end justify-center p-10 flex gap-10">
           <a
             href="https://www.linkedin.com/in/vladislav-nelipovich-084aa118a/"
             target="_blank"
