@@ -60,9 +60,11 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .container {
   max-width: 1140px;
 }
+
 .skill-container {
   @apply flex flex-col items-center hover:bg-white/30 rounded-md p-2 duration-200;
 }
@@ -70,7 +72,8 @@ html {
 .skill-icon {
   width: 3rem;
 }
-a ,.skill-container {
+
+* {
   user-select: none;
 }
 
