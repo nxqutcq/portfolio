@@ -38,7 +38,7 @@ html {
 .box {
   display: flex;
   width: 100%;
-  height: 100dvh;
+  height: 100vh;
   scroll-snap-align: start;
 }
 
@@ -55,17 +55,40 @@ html {
   width: 100%;
   height: 100%;
   background-image: url('./assets/photos/d4ql-UemMnU.jpg');
-  filter: blur(3px);
+  filter: blur(2px);
   z-index: -1;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .container {
-  max-width: 1280px;
+  max-width: 1140px;
 }
 .skill-container {
   @apply flex flex-col items-center hover:bg-white/30 rounded-md p-2 duration-200;
 }
+
+.skill-icon {
+  width: 40px;
+}
+
 a {
   user-select: none;
+}
+.second-image {
+  position: relative;
+  width: 100vw;
+}
+
+.second-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/photos/Hdjh476OIM0.jpg');
+  filter: blur(2px);
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

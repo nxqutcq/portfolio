@@ -1,7 +1,7 @@
 import { useRef } from 'react'
 import './index.css'
 import Navbar from './Navbar'
-import Skills from './Skills'
+import { Skills } from './Skills'
 
 export const App = () => {
   const mainRef = useRef(null)
@@ -19,17 +19,16 @@ export const App = () => {
   }
 
   return (
-    <div className="min-h-screen w-screen  flex flex-col">
+    <div translate="no" className="min-h-screen w-screen  flex flex-col">
       <div
-        className="box main-image bg-black/60 items-center flex flex-col"
+        className="box main-image xs:text-sm xs1:text-base bg-black/60 items-center w-screen flex flex-col"
         ref={mainRef}
       >
-        <header className="z-50 bg-white/15 py-2 fixed flex flex-col w-full items-center">
+        <header className="z-50 bg-black/30 py-2 fixed flex flex-col w-screen items-center">
           <Navbar scrollRefs={scrollRefs} />
         </header>
-
-        <div className="flex flex-row w-full gap-x-[20%] items-center container justify-center mt-40">
-          <div className="bg-slate-800 h-fit flex flex-col">
+        <div className="flex flex-row w-full gap-x-[30%] items-center container justify-center mt-40">
+          <div className="h-fit flex flex-col">
             <div>Hi there!</div>
             <h1>I'm Vladislav Nelipovich</h1>
             <div>Frontend Developer</div>
@@ -48,20 +47,22 @@ export const App = () => {
       <div ref={skillsRef} className="box">
         <Skills />
       </div>
-      <div ref={projectRef} className="box bg-green-800">
-        <div>
+      <div ref={projectRef} className="box second-image items-center flex justify-center bg-black/60">
+        <div className="container">
           <h3>FreeToGame</h3>
           <span>Description</span>
         </div>
         <div></div>
         <div></div>
       </div>
-      <div ref={contactsRef} className="box bg-purple-500">
+      <div ref={contactsRef} className="box">
         contacts
-        <a className='pt-20' href="mailto:vnelipovich63@gmail.com">Say hello</a>
+        <a className="pt-20" href="mailto:vnelipovich63@gmail.com">
+          Say hello
+        </a>
       </div>
       <footer ref={socialsRef} className="">
-        <div className="box bg-yellow-600">
+        <div className="box">
           <div className="max-w-[30px] max-h-[30px]">
             <svg
               width="100%"

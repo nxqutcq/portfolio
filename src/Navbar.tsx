@@ -18,7 +18,7 @@ const Navbar: React.FC<{ scrollRefs: ScrollRefs }> = ({ scrollRefs }) => {
           onClick={() =>
             link.ref.current?.scrollIntoView({ behavior: 'smooth' })
           }
-          className="p-3 cursor-pointer hover:bg-white/30 transition-colors duration-200 rounded-md"
+          className="p-3 xs:p-2 xs1:p-3 cursor-pointer hover:bg-white/10 transition-colors duration-200 rounded-md"
         >
           {link.label}
         </a>
