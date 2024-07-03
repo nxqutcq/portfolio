@@ -71,7 +71,7 @@ html {
   width: 3rem;
 }
 
-a {
+a ,.skill-container {
   user-select: none;
 }
 .second-image {
