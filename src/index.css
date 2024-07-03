@@ -70,15 +70,10 @@ html {
 .skill-icon {
   width: 3rem;
 }
-
-<<<<<<< HEAD
 a ,.skill-container {
-=======
-.a,
-.skill-container {
->>>>>>> c762c9e730a429175f87bfe6b4479d9390efaa8e
   user-select: none;
 }
+
 .second-image {
   position: relative;
   width: 100vw;
