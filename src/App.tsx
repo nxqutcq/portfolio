@@ -29,7 +29,7 @@ export const App = () => {
         </header>
         <div className="flex flex-row w-full xs1:gap-x-[20%] px-5 xs:gap-x-[5%] items-center container justify-center mt-[13rem]">
           <div className="h-fit flex gap-4 animate-float-up flex-col">
-            <span className='animate-pulse'>Hi there!</span>
+            <span className="animate-pulse">Hi there!</span>
             <h1 className="text-2xl">I'm Vladislav Nelipovich</h1>
             <span>Frontend Developer</span>
           </div>
@@ -44,28 +44,28 @@ export const App = () => {
           </div>
         </div>
       </div>
-      <div ref={skillsRef} className="box">
+      <div ref={skillsRef} className="box overflow-hidden">
         <Skills />
       </div>
       <div
         ref={projectRef}
-        className="box xs:flex-col md:flex-row second-image items-center flex gap-5 justify-center bg-black/60"
+        className="box xs:flex-col overflow-hidden md:flex-row second-image items-center flex gap-5 xs:gap-1 justify-center bg-black/60"
       >
         <a
           href="https://free2play-games.netlify.app/"
           target="_blank"
           rel="noopener noreferrer"
-          className="project-container"
+          className="project-container xs:mt-16 xs:w-[280px]"
         >
-          <div className="project-picture">
+          <div className="project-picture xs:w-[180px]">
             <img
               src="https://sun9-16.userapi.com/impg/mnFAWoTGDYlfx2uxH1delRuStSANNLChTJqXiA/2HvZEbLds4g.jpg?size=1861x919&quality=96&sign=ac0baf502e64117c9ec8244e118c1fd7&type=album"
               alt="my-project-preview"
             />
           </div>
-          <div className=" max-w-[240px]">
+          <div className="xs1:max-w-[240px]">
             <h3 className="my-2 text-lg">FreeToGame</h3>
-            <span className='text-sm'>
+            <span className="text-sm">
               Track what you've played and search for what to play next!
             </span>
             <br />
@@ -73,7 +73,7 @@ export const App = () => {
               <div className="p-1 px-2 border rounded-lg">React</div>
               <div className="p-1 px-2 border rounded-lg">TS</div>
               <div className="p-1 px-2 border rounded-lg">TanStack Query</div>
-              <div className="p-1 px-2 border rounded-lg">FireBase</div>
+              <div className="p-1 px-2 border rounded-lg">Firebase</div>
             </div>
           </div>
         </a>
@@ -81,9 +81,9 @@ export const App = () => {
           href="https://news-tracker-vladnel.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
-          className="project-container"
+          className="project-container xs:w-[280px]"
         >
-          <div className="project-picture">
+          <div className="project-picture xs:w-[180px]">
             <img
               src="https://sun9-61.userapi.com/impg/I9Bmm6-6Jy5W0Y8n9FKqjHz_Zj6l1Iwg8xeXSw/0LaK5-KtOXk.jpg?size=1920x922&quality=96&sign=36ed7630a675216ca9badd6bc776501b&type=album"
               alt="my-project-preview"
@@ -91,7 +91,7 @@ export const App = () => {
           </div>
           <div className=" max-w-[240px]">
             <h3 className="my-2 text-lg">News Tracker</h3>
-            <span className='text-sm'>Stay informed with the latest news</span>
+            <span className="text-sm">Stay informed with the latest news</span>
             <br />
             <div className="flex flex-wrap gap-2 mt-3 text-sm max-w-[240px]">
               <div className="p-1 px-2 border rounded-lg">React</div>
@@ -116,7 +116,7 @@ export const App = () => {
             href="https://www.linkedin.com/in/vladislav-nelipovich-084aa118a/"
             target="_blank"
             rel="noopener noreferrer"
-            className="max-w-[2rem] cursor-pointer max-h-[2rem]"
+            className="max-w-[2rem] icon-container rounded-full cursor-pointer max-h-[2rem]"
           >
             <svg
               width="100%"
