@@ -1,6 +1,6 @@
 export const Skills = () => (
-  <div className="flex w-full items-start justify-center min-h-screen xs:mt-8">
-    <div className="flex items-center gap-x-3 h-full flex-wrap justify-center container">
+  <div className="flex w-full items-center mt-5 h-full justify-center">
+    <div className="flex items-center gap-x-1 h-full flex-wrap justify-center container">
       <div className="skill-container">
         <div className="skill-icon">
           <svg
@@ -232,7 +232,7 @@ export const Skills = () => (
             width="100%"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <g fill="none" fill-rule="evenodd">
+            <g fill="none" fillRule="evenodd">
               <path
                 d="m57.8 27.2-.1-26.9h-15l.1 26.9 7.5 10.3zm-15 46.1v27h15v-27l-7.5-10.3z"
                 fill="#fff"
