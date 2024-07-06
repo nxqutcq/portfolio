@@ -24,7 +24,7 @@ export const App = () => {
         className="box main-image xs:text-sm xs1:text-base bg-black/60 items-center w-screen flex flex-col"
         ref={mainRef}
       >
-        <header className="z-50 bg-black/40 py-2 fixed flex flex-col w-screen items-center">
+        <header className="z-50 bg-black/60 py-2 fixed flex flex-col w-screen items-center">
           <Navbar scrollRefs={scrollRefs} />
         </header>
         <div className="flex flex-row w-full xs1:gap-x-[20%] px-5 xs:gap-x-[5%] items-center container justify-center mt-[13rem]">
@@ -49,26 +49,25 @@ export const App = () => {
       </div>
       <div
         ref={projectRef}
-        className="box xs:flex-col overflow-hidden md:flex-row second-image items-center flex gap-5 xs:gap-1 justify-center bg-black/60"
+        className="box xs:flex-col px-3 overflow-hidden md:flex-row second-image items-center flex md:gap-5 xs:gap-1 justify-center bg-black/60"
       >
         <a
           href="https://free2play-games.netlify.app/"
           target="_blank"
           rel="noopener noreferrer"
-          className="project-container xs:mt-16 xs:w-[280px]"
+          className="project-container xs:mt-20 md:mt-0 md:max-w-[300px]"
         >
-          <div className="project-picture xs:w-[180px]">
+          <div className="project-picture">
             <img
               src="https://sun9-16.userapi.com/impg/mnFAWoTGDYlfx2uxH1delRuStSANNLChTJqXiA/2HvZEbLds4g.jpg?size=1861x919&quality=96&sign=ac0baf502e64117c9ec8244e118c1fd7&type=album"
               alt="my-project-preview"
             />
           </div>
-          <div className="xs1:max-w-[240px]">
+          <div className="w-full">
             <h3 className="my-2 text-lg">FreeToGame</h3>
             <span className="text-sm">
               Track what you've played and search for what to play next!
             </span>
-            <br />
             <div className="flex flex-wrap gap-2 mt-3 text-sm">
               <div className="p-1 px-2 border rounded-lg">React</div>
               <div className="p-1 px-2 border rounded-lg">TS</div>
@@ -81,19 +80,18 @@ export const App = () => {
           href="https://news-tracker-vladnel.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
-          className="project-container xs:w-[280px]"
+          className="project-container xs:mb-20 md:mt-0 md:max-w-[300px]"
         >
-          <div className="project-picture xs:w-[180px]">
+          <div className="project-picture">
             <img
-              src="https://sun9-61.userapi.com/impg/I9Bmm6-6Jy5W0Y8n9FKqjHz_Zj6l1Iwg8xeXSw/0LaK5-KtOXk.jpg?size=1920x922&quality=96&sign=36ed7630a675216ca9badd6bc776501b&type=album"
+              src="https://sun9-35.userapi.com/impg/zJK6VDTyiNMtbtpMtlCUnRsIrn47xltebrn3HQ/ElYZKfLiuhM.jpg?size=1920x919&quality=96&sign=c0a3c83601d33c1806d13f3f021e361f&type=album"
               alt="my-project-preview"
             />
           </div>
-          <div className=" max-w-[240px]">
+          <div className="w-full">
             <h3 className="my-2 text-lg">News Tracker</h3>
             <span className="text-sm">Stay informed with the latest news</span>
-            <br />
-            <div className="flex flex-wrap gap-2 mt-3 text-sm max-w-[240px]">
+            <div className="flex flex-wrap gap-2 mt-3 text-sm">
               <div className="p-1 px-2 border rounded-lg">React</div>
               <div className="p-1 px-2 border rounded-lg">TS</div>
               <div className="p-1 px-2 border rounded-lg">RTK</div>
