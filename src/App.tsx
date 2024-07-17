@@ -59,8 +59,9 @@ export const App = () => {
         >
           <div className="project-picture">
             <img
-              src="https://sun9-16.userapi.com/impg/mnFAWoTGDYlfx2uxH1delRuStSANNLChTJqXiA/2HvZEbLds4g.jpg?size=1861x919&quality=96&sign=ac0baf502e64117c9ec8244e118c1fd7&type=album"
+              src="/src/assets/photos/2HvZEbLds4g.webp"
               alt="my-project-preview"
+              loading="lazy"
             />
           </div>
           <div className="w-full">
@@ -84,8 +85,9 @@ export const App = () => {
         >
           <div className="project-picture">
             <img
-              src="https://sun9-35.userapi.com/impg/zJK6VDTyiNMtbtpMtlCUnRsIrn47xltebrn3HQ/ElYZKfLiuhM.jpg?size=1920x919&quality=96&sign=c0a3c83601d33c1806d13f3f021e361f&type=album"
+              src="/src/assets/photos/ElYZKfLiuhM.webp"
               alt="my-project-preview"
+              loading="lazy"
             />
           </div>
           <div className="w-full">
