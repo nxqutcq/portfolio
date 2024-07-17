@@ -5,6 +5,7 @@ import { Skills } from './components/Skills'
 import MainSection from './components/MainSection'
 import ProjectsSection from './components/ProjectsSection'
 import FooterSection from './layout/FooterSection'
+import Contacts from './components/Contacts'
 
 export const App = () => {
   const mainRef = useRef(null)
@@ -39,12 +40,7 @@ export const App = () => {
         <ProjectsSection />
       </section>
       <section ref={contactsRef} className="box items-center justify-center">
-        <a
-          className="p-5 border rounded-md"
-          href="mailto:vnelipovich63@gmail.com"
-        >
-          Say hello
-        </a>
+        <Contacts />
       </section>
       <section ref={socialsRef}>
         <FooterSection />
