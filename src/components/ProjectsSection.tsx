@@ -8,7 +8,7 @@ const ProjectsSection = () => (
     >
       <div className="project-picture">
         <img
-          src="./src/assets/photos/2HvZEbLds4g.webp"
+          src="../assets/photos/2HvZEbLds4g.webp"
           alt="my-project-preview"
           loading="lazy"
         />
@@ -34,7 +34,7 @@ const ProjectsSection = () => (
     >
       <div className="project-picture">
         <img
-          src="./src/assets/photos/ElYZKfLiuhM.webp"
+          src="../assets/photos/ElYZKfLiuhM.webp"
           alt="my-project-preview"
           loading="lazy"
         />
