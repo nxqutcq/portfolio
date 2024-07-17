@@ -1,5 +1,5 @@
 import React from 'react'
-import { ScrollRefs } from './types'
+import { ScrollRefs } from '../types/types'
 
 const Navbar: React.FC<{ scrollRefs: ScrollRefs }> = ({ scrollRefs }) => {
   const navLinks = [
