@@ -24,19 +24,13 @@ export const App = () => {
 
   return (
     <div translate="no" className="min-h-screen w-screen  flex flex-col">
-      <section
-        className="box main-image xs:text-sm xs1:text-base bg-black/60 items-center w-screen flex flex-col"
-        ref={mainRef}
-      >
+      <section className="main-section" ref={mainRef}>
         <MainSection scrollRefs={scrollRefs} />
       </section>
       <section ref={skillsRef} className="box overflow-hidden">
         <Skills />
       </section>
-      <section
-        ref={projectRef}
-        className="box xs:flex-col px-3 overflow-hidden md:flex-row second-image items-center flex md:gap-5 xs:gap-1 justify-center bg-black/60"
-      >
+      <section ref={projectRef} className="projects-section-main">
         <ProjectsSection />
       </section>
       <section ref={contactsRef} className="box items-center justify-center">

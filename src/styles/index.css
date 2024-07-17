@@ -66,6 +66,10 @@ html {
   scroll-snap-align: start;
 }
 
+.main-section {
+  @apply box main-image xs:text-sm xs1:text-base bg-black/60 items-center w-screen flex flex-col;
+}
+
 .main-image {
   position: relative;
   width: 100vw;
@@ -88,6 +92,10 @@ html {
 
 .container {
   max-width: 1140px;
+}
+
+.projects-section-main {
+  @apply box xs:flex-col px-3 overflow-hidden md:flex-row second-image items-center flex md:gap-5 xs:gap-1 justify-center bg-black/60;
 }
 
 .project-container {
