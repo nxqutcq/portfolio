@@ -8,7 +8,7 @@ const ProjectsSection = () => (
     >
       <div className="project-picture">
         <img
-          src="https://psv4.userapi.com/c909228/u250373309/docs/d51/c656c108c45e/2HvZEbLds4g.webp?extra=fbBl3DaKvfqMe0vKujpC8lbIF4hUMoAeHA-ydwhoebQ7PZonF61NTzmP2WMC5Kug5JcUrY64P0hN7UP21Trnw3ETyjrmyZbIZ6btRdG7fR-PvgVOGv-rxfKQhN8ROdOw6oPJqs_OBOZiVuNuxBAo-hLHqw"
+          src="/src/assets/photos/2HvZEbLds4g.webp"
           alt="my-project-preview"
           loading="lazy"
         />
@@ -34,7 +34,7 @@ const ProjectsSection = () => (
     >
       <div className="project-picture">
         <img
-          src="https://psv4.userapi.com/c909228/u250373309/docs/d2/d0bbd5c4c1bd/ElYZKfLiuhM.webp?extra=osUfLDKtzmE3S1cNR3Xv8Kr7hJBrCnxO2uOoqpDO56fOqmnehqFRRU5bppxwCKgiG6TLvJC5dr3cQLDZlQBT1Prt34lnkOd46x3vkv4edXj674j-6-AIVYWDCdf_x1pKvr-Y-NM6JMe7Zw-iYkkGfoRgIA"
+          src="/src/assets/photos/ElYZKfLiuhM.webp"
           alt="my-project-preview"
           loading="lazy"
         />

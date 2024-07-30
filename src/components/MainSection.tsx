@@ -16,7 +16,7 @@ const MainSection: React.FC<{ scrollRefs: ScrollRefs }> = ({ scrollRefs }) => (
         <div className="max-w-[13rem] animate-float-up overflow-hidden rounded-full">
           <img
             draggable={false}
-            src="https://psv4.userapi.com/c909518/u250373309/docs/d4/80f94469ed72/oAT8xJ6LLDQ.webp?extra=wxxKHPTqLHKRZU2NkkvQx2MwjFw_od7GDUBXFPpy2prbut3GDG-WgF636dowadwcYTAAVKCJ8DhS_sm2mEcD7M5dCWD-NsyXBP7TBtpsyyWyj8kXFiGudlV_917agbgUQVUFAwEHxaMJvueIJ6kZBRe1kA"
+            src="/src/assets/photos/oAT8xJ6LLDQ.webp"
             alt="my-photo"
           />
         </div>
