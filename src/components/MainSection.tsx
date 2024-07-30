@@ -17,7 +17,7 @@ const MainSection: React.FC<{ scrollRefs: ScrollRefs }> = ({ scrollRefs }) => (
           <div className="max-w-[13rem] animate-float-up overflow-hidden rounded-full">
             <img
               draggable={false}
-              src="../assets/photos/oAT8xJ6LLDQ.webp"
+              src="src/assets/photos/oAT8xJ6LLDQ.webp"
               alt="my-photo"
             />
           </div>
