@@ -8,7 +8,7 @@ const ProjectsSection = () => (
     >
       <div className="project-picture">
         <img
-          src="/public/photos/2HvZEbLds4g.webp"
+          src="/photos/2HvZEbLds4g.webp"
           alt="my-project-preview"
           loading="lazy"
         />
