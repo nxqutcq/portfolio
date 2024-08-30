@@ -26,7 +26,7 @@ const ProjectsSection = () => (
         </div>
       </div>
     </a>
-    <a
+    {/* <a
       href="https://news-tracker-vladnel.vercel.app/"
       target="_blank"
       rel="noopener noreferrer"
@@ -49,7 +49,7 @@ const ProjectsSection = () => (
           <div className="p-1 px-2 border rounded-lg">RTK Query</div>
         </div>
       </div>
-    </a>
+    </a> */}
   </>
 )
 
