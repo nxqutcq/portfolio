@@ -26,30 +26,6 @@ const ProjectsSection = () => (
         </div>
       </div>
     </a>
-    {/* <a
-      href="https://news-tracker-vladnel.vercel.app/"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="project-container xs:mb-20 md:mt-0 md:max-w-[300px]"
-    >
-      <div className="project-picture">
-        <img
-          src="/photos/ElYZKfLiuhM.webp"
-          alt="my-project-preview"
-          loading="lazy"
-        />
-      </div>
-      <div className="w-full">
-        <h3 className="my-2 text-lg">News Tracker</h3>
-        <span className="text-sm">Stay informed with the latest news</span>
-        <div className="flex flex-wrap gap-2 mt-3 text-sm">
-          <div className="p-1 px-2 border rounded-lg">React</div>
-          <div className="p-1 px-2 border rounded-lg">TS</div>
-          <div className="p-1 px-2 border rounded-lg">RTK</div>
-          <div className="p-1 px-2 border rounded-lg">RTK Query</div>
-        </div>
-      </div>
-    </a> */}
   </>
 )
 

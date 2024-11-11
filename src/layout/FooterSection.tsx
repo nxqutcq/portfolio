@@ -7,6 +7,7 @@ const FooterSection = () => (
       className="max-w-[2rem] icon-container rounded-full cursor-pointer max-h-[2rem]"
     >
       <svg
+        className="social"
         width="100%"
         height="100%"
         viewBox="0 0 24 24"
@@ -26,6 +27,7 @@ const FooterSection = () => (
       className="max-w-[2rem] cursor-pointer max-h-[2rem]"
     >
       <svg
+        className="social"
         fill="#fff"
         width="100%"
         height="100%"
@@ -43,6 +45,7 @@ const FooterSection = () => (
       className="max-w-[2rem] cursor-pointer max-h-[2rem]"
     >
       <svg
+        className="social"
         width="100%"
         height="100%"
         viewBox="0 0 20 20"
