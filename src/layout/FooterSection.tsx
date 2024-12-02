@@ -21,7 +21,7 @@ const FooterSection = () => (
       </svg>
     </a>
     <a
-      href="https://t.me/vladnel671"
+      href="https://t.me/wqvewaz"
       target="_blank"
       rel="noopener noreferrer"
       className="max-w-[2rem] cursor-pointer max-h-[2rem]"
@@ -39,7 +39,7 @@ const FooterSection = () => (
       </svg>
     </a>
     <a
-      href="https://github.com/Vladnel671"
+      href="https://github.com/nxqutcq"
       target="_blank"
       rel="noopener noreferrer"
       className="max-w-[2rem] cursor-pointer max-h-[2rem]"
