@@ -124,7 +124,8 @@ img {
 }
 
 .skill-container {
-  @apply flex flex-col items-center hover:bg-white/30 rounded-md p-2 duration-200 min-w-[70px];
+  @apply flex flex-col items-center hover:bg-white/30 rounded-md p-2 duration-200 min-w-[70px] flex-shrink-0  transform transition-transform active:translate-y-1 active:shadow-sm;
+  cursor: pointer;
 }
 
 .skill-icon {
