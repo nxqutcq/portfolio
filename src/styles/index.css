@@ -3,7 +3,6 @@
 @import 'tailwindcss/utilities';
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -16,10 +15,25 @@
   scroll-snap-type: y mandatory;
 }
 
-/* ::-webkit-scrollbar {
-  width: 0;
-} */
+@font-face {
+  font-family: 'Pinksoda';
+  src: url('/src/assets/fonts/Pinksoda.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: 'Gaming';
+  src: url('/src/assets/fonts/Gaming.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-family: 'Gaming', sans-serif;
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
 body {
   width: 100%;
   margin: 0;
@@ -27,8 +41,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100lvh;
-
-  font-family: 'MulishPro', fallback, sans-serif;
+  font-family: 'Pinksoda', sans-serif;
 }
 
 html {

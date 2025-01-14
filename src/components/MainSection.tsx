@@ -44,13 +44,13 @@ const MainSection: React.FC<{ scrollRefs: ScrollRefs }> = ({ scrollRefs }) => {
       </div>
         <div className="flex flex-row w-full xs1:gap-x-[15%] px-5 xs:gap-x-[5%] items-center container justify-center">
           <div className="h-fit flex gap-4 flex-col">
-            <span ref={textRefHello} className="animate-pulse">
+            <span ref={textRefHello} className="animate-pulse text-xl">
               Hi there!
             </span>
-            <h1 ref={textRef} className="text-2xl">
+            <h1 ref={textRef}>
               I'm Vladislav Nelipovich
             </h1>
-            <span ref={frontRef}>Frontend Developer</span>
+            <span className='text-2xl' ref={frontRef}>Frontend Developer</span>
           </div>
           <div className="md:max-w-[12rem] xs:max-w-[8rem] overflow-hidden rounded-full">
             <ImageComponent src="/photos/weqd.webp" alt="my-photo" />
