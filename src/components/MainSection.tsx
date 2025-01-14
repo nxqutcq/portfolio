@@ -52,7 +52,7 @@ const MainSection: React.FC<{ scrollRefs: ScrollRefs }> = ({ scrollRefs }) => {
             </h1>
             <span ref={frontRef}>Frontend Developer</span>
           </div>
-          <div className="max-w-[12rem] overflow-hidden rounded-full">
+          <div className="md:max-w-[12rem] xs:max-w-[8rem] overflow-hidden rounded-full">
             <ImageComponent src="/photos/weqd.webp" alt="my-photo" />
           </div>
         </div>
