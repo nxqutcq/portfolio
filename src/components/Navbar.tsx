@@ -1,14 +1,54 @@
-import React from 'react'
+import React, { useEffect, useState, useMemo } from 'react'
 import { ScrollRefs } from '../types/types'
 
 const Navbar: React.FC<{ scrollRefs: ScrollRefs }> = ({ scrollRefs }) => {
-  const navLinks = [
-    { label: 'Main', ref: scrollRefs.mainRef },
-    { label: 'Skills', ref: scrollRefs.skillsRef },
-    { label: 'Projects', ref: scrollRefs.projectRef },
-    { label: 'Contacts', ref: scrollRefs.contactsRef },
-    { label: 'Socials', ref: scrollRefs.socialsRef },
-  ]
+  const [activeSection, setActiveSection] = useState<string>('Main')
+
+  const navLinks = useMemo(
+    () => [
+      { label: 'Main', ref: scrollRefs.mainRef },
+      { label: 'Skills', ref: scrollRefs.skillsRef },
+      { label: 'Projects', ref: scrollRefs.projectRef },
+      { label: 'Contacts', ref: scrollRefs.contactsRef },
+      { label: 'Socials', ref: scrollRefs.socialsRef },
+    ],
+    [scrollRefs]
+  )
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const visibleSection = navLinks.find(
+              (link) => link.ref.current === entry.target
+            )
+            if (visibleSection) {
+              setActiveSection(visibleSection.label)
+            }
+          }
+        })
+      },
+      {
+        root: null,
+        threshold: 0.6,
+      }
+    )
+
+    navLinks.forEach((link) => {
+      if (link.ref.current) {
+        observer.observe(link.ref.current)
+      }
+    })
+
+    return () => {
+      navLinks.forEach((link) => {
+        if (link.ref.current) {
+          observer.unobserve(link.ref.current)
+        }
+      })
+    }
+  }, [navLinks])
 
   return (
     <nav className="flex">
@@ -18,7 +58,9 @@ const Navbar: React.FC<{ scrollRefs: ScrollRefs }> = ({ scrollRefs }) => {
           onClick={() =>
             link.ref.current?.scrollIntoView({ behavior: 'smooth' })
           }
-          className="text-sm py-3.5 px-2.5 cursor-pointer hover:bg-white/10 transition-colors duration-200 rounded-md"
+          className={`text-sm py-3.5 mx-0.5 px-2.5 cursor-pointer hover:bg-white/10 transition-colors duration-200 rounded-md ${
+            activeSection === link.label ? 'bg-white/20' : ''
+          }`}
         >
           {link.label}
         </a>
