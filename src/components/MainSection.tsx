@@ -1,9 +1,9 @@
 import Navbar from './Navbar'
 import { ScrollRefs } from '../types/types'
 import { ImageComponent } from './ImageComponent'
-import FloatingParticles from './FloatingParticles'
 import { gsap } from 'gsap'
 import { useEffect, useRef } from 'react'
+import FloatingParticles from './FloatingParticles'
 
 const MainSection: React.FC<{ scrollRefs: ScrollRefs }> = ({ scrollRefs }) => {
   const textRef = useRef<HTMLDivElement>(null)
@@ -39,10 +39,10 @@ const MainSection: React.FC<{ scrollRefs: ScrollRefs }> = ({ scrollRefs }) => {
         <Navbar scrollRefs={scrollRefs} />
       </header>
       <div className="h-full w-full items-center flex flex-col justify-center">
+      <div className="absolute inset-0 -z-10 particles-container">
+        <FloatingParticles />
+      </div>
         <div className="flex flex-row w-full xs1:gap-x-[15%] px-5 xs:gap-x-[5%] items-center container justify-center">
-          <div className="absolute inset-0 -z-10 particles-container">
-            <FloatingParticles />
-          </div>
           <div className="h-fit flex gap-4 flex-col">
             <span ref={textRefHello} className="animate-pulse">
               Hi there!
