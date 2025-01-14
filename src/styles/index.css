@@ -18,9 +18,9 @@
   scroll-snap-type: y mandatory;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 0;
-}
+} */
 
 body {
   width: 100%;
@@ -66,8 +66,12 @@ html {
   scroll-snap-align: start;
 }
 
+.particles-container {
+  filter: blur(3px);
+}
+
 .main-section {
-  @apply box main-image xs:text-sm xs1:text-base bg-black/60 items-center w-screen flex flex-col;
+  @apply box main-image xs:text-sm xs1:text-base items-center w-screen flex flex-col;
 }
 
 .main-section::after {
