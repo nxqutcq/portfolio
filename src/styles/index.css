@@ -54,7 +54,7 @@ html {
   scroll-padding-bottom: 0;
 }
 .box:nth-child(1) {
-  min-height: 100dvh;
+  min-height: 100lvh;
   scroll-snap-align: start;
 }
 
@@ -106,7 +106,7 @@ img {
 }
 
 .skill-container {
-  @apply flex flex-col items-center hover:bg-white/30 rounded-md p-2 duration-200 min-w-[70px] flex-shrink-0  transform transition-all active:translate-y-1 active:shadow-sm;
+  @apply flex flex-col items-center hover:bg-white/30 rounded-md p-2 duration-200 min-w-[70px] flex-shrink-0 transform transition-all active:translate-y-1 active:shadow-sm;
   cursor: pointer;
 }
 
@@ -127,5 +127,5 @@ header {
   transition: all 0.2s ease-in-out;
 }
 .gradient-bg {
-  background: linear-gradient(to top, black, transparent 100%);
+  background: linear-gradient(to top, black, transparent 40%);
 }

@@ -9,8 +9,8 @@ const FloatingParticles = () => {
 
     particles.forEach((particle) => {
       const animateParticle = () => {
-        const duration = Math.random() * 4 + 2 // 2 to 6 seconds
-        const delay = Math.random() * 2 // 0 to 2 seconds
+        const duration = Math.random() * 4 + 2
+        const delay = Math.random() * 2
         gsap.to(particle, {
           x: `+=${Math.random() * 300 - 150}`,
           y: `+=${Math.random() * 300 - 150}`,
@@ -38,7 +38,7 @@ const FloatingParticles = () => {
         backgroundColor: '#000',
       }}
     >
-      {[...Array(50)].map((_, i) => (
+      {[...Array(100)].map((_, i) => (
         <div
           key={i}
           style={{
@@ -46,7 +46,9 @@ const FloatingParticles = () => {
             width: '10px',
             height: '10px',
             borderRadius: '50%',
-            background: `rgba(255, 255, 255, ${Math.random()})`,
+            background: `rgba(${Math.random() * 255}, ${Math.random() * 255}, ${
+              Math.random() * 255
+            }, ${Math.random()})`,
             top: `${Math.random() * 100}%`,
             left: `${Math.random() * 100}%`,
           }}
