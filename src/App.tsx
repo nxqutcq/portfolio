@@ -36,7 +36,7 @@ export const App = () => {
         </section>
         <section
           ref={contactsRef}
-          className="box gradient-bg relative items-center justify-center"
+          className="box relative items-center justify-center"
         >
           <Contacts />
           <FooterSection />

@@ -127,5 +127,5 @@ header {
   transition: all 0.2s ease-in-out;
 }
 .gradient-bg {
-  background: linear-gradient(to top, black, transparent 5%);
+  background: linear-gradient(to top, black, transparent 100%);
 }
