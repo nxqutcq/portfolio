@@ -1,5 +1,6 @@
 import { useRef } from 'react'
 import { gsap } from 'gsap'
+import { useScrollAnimation } from '../hooks/useScrollAnimation'
 const Contacts = () => {
   const buttonRef = useRef(null)
 
@@ -22,14 +23,14 @@ const Contacts = () => {
   const handleClick = () => {
     window.location.href = 'mailto:vnelipovich63@gmail.com'
   }
-
+  useScrollAnimation('.mail-btn')
   return (
     <button
       ref={buttonRef}
       onClick={handleClick}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className="px-5 py-4 border rounded-md"
+      className="px-5 mail-btn py-4 border rounded-md"
       style={{
         cursor: 'pointer',
         backgroundImage: 'linear-gradient(to top, #07c98863, #09771755)',

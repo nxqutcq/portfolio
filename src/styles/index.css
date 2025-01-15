@@ -52,28 +52,23 @@ html {
   display: flex;
   scroll-padding-top: 0;
   scroll-padding-bottom: 0;
+  min-height: 100lvh;
 }
 .box:nth-child(1) {
-  min-height: 100lvh;
   scroll-snap-align: start;
 }
 
 .box:nth-child(2) {
   scroll-snap-align: center;
-  height: max-content;
-  min-height: 100dvh;
 }
 
 .box:nth-child(3) {
   scroll-snap-align: center;
-  height: min-content;
-  min-height: 100lvh;
 }
 
 .box:nth-child(4) {
   flex-direction: column;
   scroll-snap-align: end;
-  min-height: 100lvh;
 }
 
 .particles-container {
