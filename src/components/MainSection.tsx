@@ -1,11 +1,9 @@
-import Navbar from './Navbar'
-import { ScrollRefs } from '../types/types'
 import { ImageComponent } from './ImageComponent'
 import { gsap } from 'gsap'
 import { useEffect, useRef } from 'react'
 import FloatingParticles from './FloatingParticles'
 
-const MainSection: React.FC<{ scrollRefs: ScrollRefs }> = ({ scrollRefs }) => {
+const MainSection: React.FC = () => {
   const textRef = useRef<HTMLDivElement>(null)
   const textRefHello = useRef<HTMLDivElement>(null)
   const frontRef = useRef<HTMLDivElement>(null)
@@ -18,7 +16,7 @@ const MainSection: React.FC<{ scrollRefs: ScrollRefs }> = ({ scrollRefs }) => {
       gsap.fromTo(
         textRef.current.children,
         { opacity: 0, y: 50 },
-        { opacity: 1, y: 0, duration: 1, stagger: 0.05, ease: 'power2.out' },
+        { opacity: 1, y: 0, duration: 1, stagger: 0.05, ease: 'power2.out' }
       )
       gsap.fromTo(
         textRefHello.current,
@@ -28,36 +26,33 @@ const MainSection: React.FC<{ scrollRefs: ScrollRefs }> = ({ scrollRefs }) => {
       gsap.fromTo(
         frontRef.current,
         { opacity: 0, x: -200 },
-        { opacity: 1, x: 0, duration: 1.2, ease: "power2.out" }
+        { opacity: 1, x: 0, duration: 1.2, ease: 'power2.out' }
       )
     }
   }, [])
 
   return (
-    <>
-      <header className="z-50 bg-black/60 py-2 fixed flex flex-col w-screen items-center">
-        <Navbar scrollRefs={scrollRefs} />
-      </header>
+    <div className='flex w-full'>
       <div className="h-full w-full items-center flex flex-col justify-center">
-      <div className="absolute inset-0 -z-10 particles-container">
-        <FloatingParticles />
-      </div>
+        <div className="absolute inset-0 -z-10 particles-container">
+          <FloatingParticles />
+        </div>
         <div className="flex flex-row w-full xs1:gap-x-[15%] px-5 xs:gap-x-[5%] items-center container justify-center">
           <div className="h-fit flex gap-4 flex-col">
             <span ref={textRefHello} className="animate-pulse text-xl">
               Hi there!
             </span>
-            <h1 ref={textRef}>
-              I'm Vladislav Nelipovich
-            </h1>
-            <span className='text-2xl' ref={frontRef}>Frontend Developer</span>
+            <h1 ref={textRef}>I'm Vladislav Nelipovich</h1>
+            <span className="text-2xl" ref={frontRef}>
+              Frontend Developer
+            </span>
           </div>
           <div className="md:max-w-[12rem] xs:max-w-[8rem] overflow-hidden rounded-full">
             <ImageComponent src="/photos/weqd.webp" alt="my-photo" />
           </div>
         </div>
       </div>
-    </>
+    </div>
   )
 }
 export default MainSection

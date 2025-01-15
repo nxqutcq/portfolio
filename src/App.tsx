@@ -4,41 +4,44 @@ import './styles/index.css'
 import { Skills } from './components/Skills'
 import MainSection from './components/MainSection'
 import ProjectsSection from './components/ProjectsSection'
-import FooterSection from './layout/FooterSection'
 import Contacts from './components/Contacts'
+import FooterSection from './layout/FooterSection'
+import Header from './layout/Header'
 
 export const App = () => {
   const mainRef = useRef(null)
   const skillsRef = useRef(null)
   const projectRef = useRef(null)
   const contactsRef = useRef(null)
-  const socialsRef = useRef(null)
 
   const scrollRefs = {
     mainRef,
     skillsRef,
     projectRef,
     contactsRef,
-    socialsRef,
   }
 
   return (
     <div translate="no" className="min-h-screen w-screen flex flex-col">
-      <section className="main-section" ref={mainRef}>
-        <MainSection scrollRefs={scrollRefs} />
-      </section>
-      <section ref={skillsRef} className="box overflow-hidden">
-        <Skills />
-      </section>
-      <section ref={projectRef} className="projects-section-main">
-        <ProjectsSection />
-      </section>
-      <section ref={contactsRef} className="box items-center justify-center">
-        <Contacts />
-      </section>
-      <section ref={socialsRef}>
-        <FooterSection />
-      </section>
+      <Header scrollRefs={scrollRefs} />
+      <div>
+        <section className="main-section" ref={mainRef}>
+          <MainSection />
+        </section>
+        <section ref={skillsRef} className="box overflow-hidden">
+          <Skills />
+        </section>
+        <section ref={projectRef} className="projects-section-main">
+          <ProjectsSection />
+        </section>
+        <section
+          ref={contactsRef}
+          className="box gradient-bg relative items-center justify-center"
+        >
+          <Contacts />
+          <FooterSection />
+        </section>
+      </div>
     </div>
   )
 }

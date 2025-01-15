@@ -4,5 +4,4 @@ export type ScrollRefs = {
   skillsRef: RefObject<HTMLDivElement>
   projectRef: RefObject<HTMLDivElement>
   contactsRef: RefObject<HTMLDivElement>
-  socialsRef: RefObject<HTMLDivElement>
 }

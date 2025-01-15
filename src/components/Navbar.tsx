@@ -10,7 +10,6 @@ const Navbar: React.FC<{ scrollRefs: ScrollRefs }> = ({ scrollRefs }) => {
       { label: 'Skills', ref: scrollRefs.skillsRef },
       { label: 'Projects', ref: scrollRefs.projectRef },
       { label: 'Contacts', ref: scrollRefs.contactsRef },
-      { label: 'Socials', ref: scrollRefs.socialsRef },
     ],
     [scrollRefs]
   )
