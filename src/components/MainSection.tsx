@@ -7,6 +7,7 @@ const MainSection: React.FC = () => {
   const textRef = useRef<HTMLDivElement>(null)
   const textRefHello = useRef<HTMLDivElement>(null)
   const frontRef = useRef<HTMLDivElement>(null)
+
   useEffect(() => {
     if (textRef.current) {
       const chars = textRef.current.textContent?.split('') || []
@@ -32,27 +33,32 @@ const MainSection: React.FC = () => {
   }, [])
 
   return (
-    <div className='flex w-full'>
-      <div className="h-full w-full items-center flex flex-col justify-center">
+    <div className="flex w-full">
+      <div className="w-full items-center flex flex-col justify-center">
         <div className="absolute inset-0 -z-10 particles-container">
           <FloatingParticles />
         </div>
-        <div className="flex flex-row w-full xs1:gap-x-[15%] px-5 xs:gap-x-[5%] items-center container justify-center">
-          <div className="h-fit flex gap-4 flex-col">
-            <span ref={textRefHello} className="animate-pulse text-xl">
-              Hi there!
-            </span>
-            <h1 ref={textRef}>I'm Vladislav Nelipovich</h1>
-            <span className="text-2xl" ref={frontRef}>
-              Frontend Developer
-            </span>
+        <div className="flex flex-row h-full w-full xs1:gap-x-[15%] xs:px-5 md:px-0 xs:gap-x-[5%] items-center container justify-center">
+          <div className="h-full flex items-center">
+            <div className="gap-4 flex flex-col items-center justify-center transition-transform duration-300 sticky top-[64.8px]">
+              <span className="animate-pulse text-xl">Hi there!</span>
+              <h1 ref={textRef} className="w-full text-center">
+                I'm Vladislav Nelipovich
+              </h1>
+              <span className="text-2xl text-center" ref={frontRef}>
+                Frontend Developer
+              </span>
+            </div>
           </div>
-          <div className="md:max-w-[12rem] xs:max-w-[8rem] overflow-hidden rounded-full">
-            <ImageComponent src="/photos/weqd.webp" alt="my-photo" />
+          <div className="flex h-full items-center">
+            <div className="md:max-w-[12rem] xs:max-w-[12rem] overflow-hidden rounded-full transition-transform duration-300 sticky top-[64.8px]">
+              <ImageComponent src="/photos/weqd.webp" alt="my-photo" />
+            </div>
           </div>
         </div>
       </div>
     </div>
   )
 }
+
 export default MainSection
