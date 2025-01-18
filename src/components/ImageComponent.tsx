@@ -1,11 +1,13 @@
-interface ImageComponentProps {
+interface ImageComponentProps
+  extends React.ImgHTMLAttributes<HTMLImageElement> {
   src: string
   alt?: string
 }
 
 export const ImageComponent: React.FC<ImageComponentProps> = ({
   src,
-  alt = 'Protected',
+  alt,
+  ...props
 }) => {
   const handleContextMenu = (event: React.MouseEvent<HTMLImageElement>) => {
     event.preventDefault()
@@ -13,13 +15,10 @@ export const ImageComponent: React.FC<ImageComponentProps> = ({
 
   return (
     <img
-      src={src}
-      alt={alt}
       onContextMenu={handleContextMenu}
-      style={{
-        userSelect: 'none',
-        pointerEvents: 'none',
-      }}
+      src={src}
+      alt={alt || 'image'}
+      {...props}
     />
   )
 }
