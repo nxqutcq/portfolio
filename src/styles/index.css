@@ -20,6 +20,7 @@
   src: url('/src/assets/fonts/Pinksoda.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -27,6 +28,7 @@
   src: url('/src/assets/fonts/Gaming.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 h1 {
@@ -40,7 +42,7 @@ body {
   display: flex;
   place-items: center;
   min-width: 320px;
-  min-height: 100lvh;
+  min-height: 100vh;
   font-family: 'Pinksoda', sans-serif;
 }
 
@@ -52,14 +54,17 @@ html {
   display: flex;
   scroll-padding-top: 0;
   scroll-padding-bottom: 0;
-  min-height: 100lvh;
+  min-height: 100dvh;
 }
+
 .box:nth-child(1) {
   scroll-snap-align: start;
+  min-height: 100vh;
 }
 
 .box:nth-child(2) {
   scroll-snap-align: center;
+  background-color: rgb(10, 10, 10);
 }
 
 .box:nth-child(3) {
@@ -69,10 +74,12 @@ html {
 .box:nth-child(4) {
   flex-direction: column;
   scroll-snap-align: end;
+  background-color: rgb(10, 10, 10);
 }
 
 .particles-container {
   filter: blur(2px);
+  pointer-events: none;
 }
 
 .main-section {
@@ -88,7 +95,7 @@ html {
 }
 
 .project-container {
-  @apply transition-all hover:shadow-md duration-500 transform md:hover:scale-105 xs:hover:scale-95 container items-center flex flex-col cursor-pointer bg-white/5 p-5 rounded-md w-fit;
+  @apply transition-all hover:shadow-md duration-500 transform md:hover:scale-105 xs:hover:scale-95 items-center flex flex-col cursor-pointer bg-black/60 p-5 rounded-md;
 }
 
 .project-picture {
