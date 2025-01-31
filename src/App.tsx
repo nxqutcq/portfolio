@@ -22,7 +22,7 @@ export const App = () => {
   }
 
   return (
-    <div translate="no" className="min-h-screen w-screen flex flex-col">
+    <div translate="no" className="min-h-screen w-full flex flex-col">
       <Header scrollRefs={scrollRefs} />
       <div>
         <section className="main-section" ref={mainRef}>

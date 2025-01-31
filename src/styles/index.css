@@ -6,7 +6,6 @@
 :root {
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   font-synthesis: none;
@@ -15,7 +14,9 @@
   -moz-osx-font-smoothing: grayscale;
   scroll-snap-type: y mandatory;
 }
-
+#root {
+  width: 100%;
+}
 @font-face {
   font-family: 'Pinksoda';
   src: url('/src/assets/fonts/Pinksoda.woff2') format('woff2');
@@ -125,7 +126,9 @@ img {
 }
 
 header {
+  background-color: rgba(0, 0, 0, 0.8);
   border-bottom: 1px solid rgb(255 255 255 / 10%);
+  backdrop-filter: blur(2px); 
 }
 
 .social:hover path {
