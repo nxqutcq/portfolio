@@ -15,7 +15,6 @@ const ProjectsSection = () => (
     }}
     pagination={{ clickable: true }}
     modules={[Pagination]}
-    className="max-w-[1140px] w-full"
   >
     {projects.map((project, index) => (
       <SwiperSlide key={index}>
@@ -23,7 +22,7 @@ const ProjectsSection = () => (
           href={project.link}
           target="_blank"
           rel="noopener noreferrer"
-          className="block project-container border border-zinc-900 max-w-[300px] mx-auto"
+          className="block project-container border border-dotted border-zinc-800 max-w-[300px] mx-auto"
         >
           <div className="project-picture">
             <ImageComponent
