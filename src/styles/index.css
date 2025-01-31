@@ -103,7 +103,9 @@ section {
 }
 
 .project-container {
-  @apply transition-all hover:shadow-md duration-500 transform hover:scale-95 items-center flex flex-col cursor-pointer bg-black/60 p-5 rounded-md;
+  border: 1px rgb(32, 32, 32) solid;
+  box-shadow: 0 0 10px 2px rgba(32, 32, 32, 0.708);
+  @apply transition-all hover:shadow-md duration-500 transform hover:scale-95 items-center flex flex-col cursor-pointer bg-black/80 p-5 rounded-2xl;
 }
 
 .project-picture {
@@ -151,4 +153,28 @@ header {
 .swiper-pagination-bullet-active {
   background: aqua !important;
   box-shadow: 0 0 10px 2px rgba(0, 255, 255, 0.5) !important;
+}
+.swiper {
+  padding-block: 1rem !important;
+}
+.nav-links {
+  color: #00eeff;
+  animation: glowing 1.5s infinite alternate;
+}
+
+@keyframes glowing {
+  0% {
+    text-shadow: 0 0 5px #00eeff, 0 0 10px #00eeff;
+  }
+  50% {
+    text-shadow: 0 0 10px #00eeff, 0 0 20px #00eeff;
+  }
+  100% {
+    text-shadow: 0 0 5px #00eeff, 0 0 10px #00eeff;
+  }
+}
+
+.tech {
+  border: 1px #313131 solid;
+  color: #bfbfbf;
 }

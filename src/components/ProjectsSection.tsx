@@ -24,7 +24,7 @@ const ProjectsSection = () => (
           href={project.link}
           target="_blank"
           rel="noopener noreferrer"
-          className="block project-container border border-dotted border-zinc-800 max-w-[300px] mx-auto"
+          className="block project-container max-w-[300px] mx-auto"
         >
           <div className="project-picture">
             <ImageComponent
@@ -38,7 +38,7 @@ const ProjectsSection = () => (
             <span className="text-sm">{project.description}</span>
             <div className="flex flex-wrap gap-2 mt-3 text-sm">
               {project.technologies.map((tech, i) => (
-                <div key={i} className="p-1 px-2 border rounded-lg">
+                <div key={i} className="p-1 px-2 tech rounded-lg">
                   {tech}
                 </div>
               ))}

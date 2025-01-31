@@ -57,8 +57,8 @@ const Navbar: React.FC<{ scrollRefs: ScrollRefs }> = ({ scrollRefs }) => {
           onClick={() =>
             link.ref.current?.scrollIntoView()
           }
-          className={`text-sm py-3.5 mx-0.5 px-3 cursor-pointer hover:bg-white/10 transition-colors duration-200 rounded-md ${
-            activeSection === link.label ? 'bg-white/20 text-cyan-500' : ''
+          className={`text-sm py-3.5 mx-0.5 px-3 cursor-pointer hover:bg-white/10 rounded-md ${
+            activeSection === link.label ? 'bg-white/20 nav-links' : ''
           }`}
         >
           {link.label}
