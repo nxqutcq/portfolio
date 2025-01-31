@@ -2,7 +2,7 @@ import { skills } from '../data/skillsData'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 
 export const Skills = () => {
-  useScrollAnimation('.skills-animation')
+  useScrollAnimation('.skill-container');
 
   return (
     <div className="flex w-full items-center justify-center">
