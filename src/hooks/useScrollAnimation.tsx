@@ -12,12 +12,11 @@ export const useScrollAnimation = (elementSelector: string) => {
       elements,
       {
         opacity: 0,
-        y: 20,
+        y: -30,
       },
       {
         opacity: 1,
         y: 0,
-        duration: 1,
         stagger: 0.1,
         scrollTrigger: {
           trigger: elements[0].parentElement,
