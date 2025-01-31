@@ -9,12 +9,14 @@ const ProjectsSection = () => (
   <Swiper
     spaceBetween={20}
     slidesPerView={1}
+    loop={true}
     breakpoints={{
       640: { slidesPerView: 1.5 },
       768: { slidesPerView: 2 },
     }}
     pagination={{ clickable: true }}
     modules={[Pagination]}
+    className='max-w-[1140px] w-full'
   >
     {projects.map((project, index) => (
       <SwiperSlide key={index}>

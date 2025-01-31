@@ -33,12 +33,12 @@ const MainSection: React.FC = () => {
   }, [])
 
   return (
-    <div className="w-full justify-center flex">
+    <div className="w-full justify-center h-screen flex max-w-[1140px]">
       <div className="w-full items-center flex flex-col justify-center">
         <div className="absolute inset-0 -z-10 particles-container w-full h-full">
           <FloatingParticles />
         </div>
-        <div className="flex flex-row h-full w-full xs1:gap-x-[15%] xs:px-5 md:px-0 xs:gap-x-[5%] items-center container justify-center">
+        <div className="flex flex-row h-full w-full xs1:gap-x-[15%]  md:px-0 xs:gap-x-[5%] items-center container justify-center">
           <div className="h-full flex items-center">
             <div className="gap-4 flex flex-col items-center justify-center sticky top-[64.8px]">
               <span className="animate-pulse text-xl">Hi there!</span>

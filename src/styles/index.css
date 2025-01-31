@@ -90,8 +90,12 @@ html {
   @apply box xs:text-sm xs1:text-base;
 }
 
-.container {
-  max-width: 1140px;
+section {
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .projects-section-main {
@@ -147,8 +151,4 @@ header {
 .swiper-pagination-bullet-active {
   background: aqua !important;
   box-shadow: 0 0 10px 2px rgba(0, 255, 255, 0.5) !important;
-}
-.swiper {
-  max-width: 1140px !important;
-  width: 100% !important;
 }
