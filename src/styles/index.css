@@ -71,7 +71,7 @@ html {
 
 .box:nth-child(3) {
   scroll-snap-align: center;
-  background-color: rgb(12, 31, 45);
+  background-color: rgb(13, 13, 13);
 }
 
 .box:nth-child(4) {
