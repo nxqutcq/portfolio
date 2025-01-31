@@ -6,7 +6,7 @@ const ProjectsSection = () => (
       href="https://free2play-games.netlify.app/"
       target="_blank"
       rel="noopener noreferrer"
-      className="project-container xs:max-w-[300px] md:max-w-[300px]"
+      className="project-container border border-zinc-900 xs:max-w-[300px] md:max-w-[300px]"
     >
       <div className="project-picture">
         <ImageComponent
@@ -31,7 +31,7 @@ const ProjectsSection = () => (
       href="https://sales-dashboard-vladnel.netlify.app/"
       target="_blank"
       rel="noopener noreferrer"
-      className="project-container xs:max-w-[300px] md:max-w-[300px]"
+      className="project-container border border-zinc-900 xs:max-w-[300px] md:max-w-[300px]"
     >
       <div className="project-picture">
         <ImageComponent

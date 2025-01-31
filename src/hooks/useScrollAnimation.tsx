@@ -17,7 +17,7 @@ export const useScrollAnimation = (elementSelector: string) => {
       {
         opacity: 1,
         y: 0,
-        stagger: 0.1,
+        stagger: 0.08,
         scrollTrigger: {
           trigger: elements[0].parentElement,
           start: 'top 80%',

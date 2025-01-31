@@ -1,6 +1,6 @@
 import { ImageComponent } from './ImageComponent'
 import { gsap } from 'gsap'
-import { useEffect, useRef } from 'react'
+import { useLayoutEffect, useRef } from 'react'
 import FloatingParticles from './FloatingParticles'
 
 const MainSection: React.FC = () => {
@@ -8,7 +8,7 @@ const MainSection: React.FC = () => {
   const textRefHello = useRef<HTMLDivElement>(null)
   const frontRef = useRef<HTMLDivElement>(null)
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (textRef.current) {
       const chars = textRef.current.textContent?.split('') || []
       textRef.current.innerHTML = chars
@@ -33,14 +33,14 @@ const MainSection: React.FC = () => {
   }, [])
 
   return (
-    <div className="flex w-full">
+    <div className="w-full justify-center flex">
       <div className="w-full items-center flex flex-col justify-center">
-        <div className="absolute inset-0 -z-10 particles-container">
+        <div className="absolute inset-0 -z-10 particles-container w-full h-full">
           <FloatingParticles />
         </div>
         <div className="flex flex-row h-full w-full xs1:gap-x-[15%] xs:px-5 md:px-0 xs:gap-x-[5%] items-center container justify-center">
           <div className="h-full flex items-center">
-            <div className="gap-4 flex flex-col items-center justify-center transition-transform duration-300 sticky top-[64.8px]">
+            <div className="gap-4 flex flex-col items-center justify-center sticky top-[64.8px]">
               <span className="animate-pulse text-xl">Hi there!</span>
               <h1 ref={textRef} className="w-full text-center">
                 I'm Vladislav Nelipovich
@@ -51,7 +51,7 @@ const MainSection: React.FC = () => {
             </div>
           </div>
           <div className="flex h-full items-center">
-            <div className="md:max-w-[12rem] xs:max-w-[12rem] overflow-hidden rounded-full transition-transform duration-300 sticky top-[64.8px]">
+            <div className="md:max-w-[12rem] xs:max-w-[12rem] overflow-hidden rounded-full sticky top-[64.8px]">
               <ImageComponent src="/photos/weqd.webp" alt="my-photo" />
             </div>
           </div>

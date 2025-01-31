@@ -1,0 +1,72 @@
+.mail-btn,
+.mail-btn *,
+.mail-btn :after,
+.mail-btn :before,
+.mail-btn:after,
+.mail-btn:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.mail-btn {
+  -webkit-tap-highlight-color: transparent;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+.mail-btn:disabled {
+  cursor: default;
+}
+.mail-btn:-moz-focusring {
+  outline: auto;
+}
+.mail-btn svg {
+  display: block;
+}
+.mail-btn [hidden] {
+  display: none;
+}
+.mail-btn {
+  border-radius: 0.4rem;
+  border-width: 1px;
+  overflow: hidden;
+  padding: 1rem 2.3rem;
+  position: relative;
+}
+.mail-btn span {
+  mix-blend-mode: difference;
+}
+.mail-btn:before {
+  --tilt: 1.2rem;
+  background: rgba(0, 84, 84, 0.505);
+  -webkit-clip-path: polygon(
+    0 0,
+    calc(100% - var(--tilt)) 0,
+    100% 100%,
+    0 100%
+  );
+  clip-path: polygon(0 0, calc(100% - var(--tilt)) 0, 100% 100%, 0 100%);
+  content: '';
+  display: block;
+  height: 100%;
+  left: calc(-100% - var(--tilt));
+  position: absolute;
+  top: 0;
+  transform: translateX(var(--progress, 0));
+  transition: transform 0.2s ease;
+  width: calc(100% + var(--tilt));
+}
+.mail-btn:hover:before {
+  --progress: 100%;
+}
+.mail-btn:hover span {
+  color: aqua;
+}
+.mail-btn:hover {
+  border-color: rgba(0, 255, 255, 0.900);
+}
