@@ -8,9 +8,10 @@ export const useScrollAnimation = (elementSelector: string) => {
   useEffect(() => {
     gsap.fromTo(
       elementSelector,
-      { opacity: 0 },
+      { opacity: 0, y: -30 },
       {
         opacity: 1,
+        y: 0,
         duration: 0.1,
         ease: 'power2.out',
         stagger: 0.1,
