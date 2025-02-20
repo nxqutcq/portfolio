@@ -6,22 +6,17 @@ gsap.registerPlugin(ScrollTrigger)
 
 export const useScrollAnimation = (elementSelector: string) => {
   useEffect(() => {
-    const elements = gsap.utils.toArray<HTMLElement>(elementSelector)
-
     gsap.fromTo(
-      elements,
-      {
-        opacity: 0,
-        y: -30,
-      },
+      elementSelector,
+      { opacity: 0 },
       {
         opacity: 1,
-        y: 0,
-        stagger: 0.08,
+        duration: 0.1,
+        ease: 'power2.out',
+        stagger: 0.1,
         scrollTrigger: {
-          trigger: elements[0].parentElement,
+          trigger: '.skill-container',
           start: 'top 80%',
-          end: 'bottom top',
           once: true,
         },
       }

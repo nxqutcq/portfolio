@@ -1,7 +1,6 @@
 import { ImageComponent } from './ImageComponent'
 import { gsap } from 'gsap'
 import { useLayoutEffect, useRef } from 'react'
-import FloatingParticles from './FloatingParticles'
 
 const MainSection: React.FC = () => {
   const textRef = useRef<HTMLDivElement>(null)
@@ -36,7 +35,6 @@ const MainSection: React.FC = () => {
     <div className="w-full justify-center h-screen flex max-w-[1140px]">
       <div className="w-full items-center flex flex-col justify-center">
         <div className="absolute inset-0 -z-10 particles-container w-full h-full">
-          <FloatingParticles />
         </div>
         <div className="flex flex-row h-full w-full xs1:gap-x-[15%]  md:px-0 xs:gap-x-[5%] items-center container justify-center">
           <div className="h-full flex items-center">
