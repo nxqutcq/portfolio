@@ -64,7 +64,7 @@ body {
   display: flex;
   place-items: center;
   min-width: 320px;
-  min-height: 100vh;
+  min-height: 100lvh;
   font-family: 'Pinksoda', sans-serif;
 }
 
@@ -77,12 +77,12 @@ html {
   display: flex;
   scroll-padding-top: 0;
   scroll-padding-bottom: 0;
-  min-height: 100dvh;
+  min-height: 100lvh;
 }
 
 .box:nth-child(1) {
   scroll-snap-align: start;
-  min-height: 100vh;
+  min-height: 100lvh;
 }
 
 .box:nth-child(2) {
