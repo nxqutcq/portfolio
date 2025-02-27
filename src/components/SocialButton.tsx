@@ -14,7 +14,7 @@ export const SocialButton: React.FC<SocialButtonProps> = ({
   <button
     onClick={onClick}
     rel="noopener noreferrer"
-    className="max-w-[1.5rem] max-h-[1.5rem] cursor-pointer"
+    className="max-w-[1.3rem] max-h-[1.3rem] cursor-pointer"
     aria-label={ariaLabel}
   >
     <svg
