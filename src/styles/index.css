@@ -12,7 +12,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  scroll-snap-type: y mandatory;
+  /* scroll-snap-type: y mandatory; */
 }
 #root {
   width: 100%;
@@ -62,59 +62,27 @@ h1 {
 body {
   width: 100%;
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100lvh;
   font-family: 'Pinksoda', sans-serif;
+}
+
+section {
+  min-height: 100lvh;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+section:nth-child(3) {
+  background-color: rgb(10, 10, 10);
+}
+
+section:nth-child(4) {
+  background-color: rgb(13, 13, 13);
 }
 
 html {
   overflow-x: hidden;
   scroll-behavior: smooth;
-}
-
-.box {
-  display: flex;
-  scroll-padding-top: 0;
-  scroll-padding-bottom: 0;
-  min-height: 100dvh;
-}
-
-.box:nth-child(1) {
-  scroll-snap-align: start;
-}
-
-.box:nth-child(2) {
-  scroll-snap-align: center;
-  background-color: rgb(10, 10, 10);
-}
-
-.box:nth-child(3) {
-  scroll-snap-align: center;
-  background-color: rgb(13, 13, 13);
-}
-
-.box:nth-child(4) {
-  flex-direction: column;
-  scroll-snap-align: end;
-  background-color: rgb(10, 10, 10);
-}
-
-.main-section {
-  @apply box xs:text-sm xs1:text-base;
-}
-
-section {
-  width: 100%;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.projects-section-main {
-  @apply box xs:flex-col px-3 z-50 bg-slate-500 overflow-hidden md:flex-row items-center flex md:gap-5 xs:gap-1 justify-center;
 }
 
 .project-container {

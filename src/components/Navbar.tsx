@@ -50,7 +50,7 @@ const Navbar: React.FC<{ scrollRefs: ScrollRefs }> = ({ scrollRefs }) => {
   }, [navLinks])
 
   return (
-    <nav className="flex">
+    <nav className="flex h-full items-center">
       {navLinks.map((link) => (
         <a
           key={link.label}

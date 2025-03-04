@@ -5,7 +5,6 @@ import { Skills } from './components/Skills'
 import MainSection from './components/MainSection'
 import ProjectsSection from './components/ProjectsSection'
 import Contacts from './components/Contacts'
-import FooterSection from './layout/FooterSection'
 import Header from './layout/Header'
 
 export const App = () => {
@@ -22,26 +21,12 @@ export const App = () => {
   }
 
   return (
-    <div translate="no" className="min-h-lvh w-full flex flex-col">
+    <div translate="no">
       <Header scrollRefs={scrollRefs} />
-      <div className='flex flex-col items-center w-full'>
-        <section className="main-section" ref={mainRef}>
-          <MainSection />
-        </section>
-        <section ref={skillsRef} className="box overflow-hidden">
-          <Skills />
-        </section>
-        <section ref={projectRef} className="projects-section-main">
-          <ProjectsSection />
-        </section>
-        <section
-          ref={contactsRef}
-          className="box relative items-center justify-center"
-        >
-          <Contacts />
-          <FooterSection />
-        </section>
-      </div>
+      <MainSection mainRef={mainRef} />
+      <Skills skillsRef={skillsRef} />
+      <ProjectsSection projectRef={projectRef} />
+      <Contacts contactsRef={contactsRef} />
     </div>
   )
 }

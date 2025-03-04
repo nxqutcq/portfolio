@@ -1,7 +1,7 @@
 import React from 'react'
 import { SocialButton } from '../components/SocialButton'
 
-const Footer: React.FC = () => {
+export const Footer: React.FC = () => {
   const linkedInClick = () => {
     window.open(
       'https://www.linkedin.com/in/vladislav-nelipovich-084aa118a/',

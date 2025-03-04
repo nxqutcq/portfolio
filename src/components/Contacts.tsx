@@ -1,7 +1,10 @@
-import { useRef } from 'react'
+import { RefObject, useRef } from 'react'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
+import Footer from '../layout/Footer'
 
-const Contacts = () => {
+const Contacts: React.FC<{ contactsRef: RefObject<HTMLDivElement> }> = ({
+  contactsRef,
+}) => {
   const buttonRef = useRef(null)
   const backgroundRef = useRef(null)
 
@@ -12,10 +15,16 @@ const Contacts = () => {
   useScrollAnimation('.mail-btn')
 
   return (
-    <button ref={buttonRef} onClick={handleClick} className="mail-btn">
-      <span>Say hello</span>
-      <div ref={backgroundRef} />
-    </button>
+    <section
+      ref={contactsRef}
+      className="box relative items-center justify-center"
+    >
+      <button ref={buttonRef} onClick={handleClick} className="mail-btn">
+        <span>Say hello</span>
+        <div ref={backgroundRef} />
+      </button>
+      <Footer />
+    </section>
   )
 }
 
