@@ -13,7 +13,7 @@ const ProjectsSection: React.FC<{ projectRef: RefObject<HTMLDivElement> }> = ({
     <div>
       <Swiper
         spaceBetween={20}
-        slidesPerView={1}
+        slidesPerView={2}
         loop={projects.length > 4}
         breakpoints={{
           640: {

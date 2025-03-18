@@ -2,7 +2,7 @@ export const projects = [
   {
     title: 'Next Shop',
     link: 'https://nextjs-shop-mu-tan.vercel.app/',
-    image: '',
+    image: '/photos/acmql.webp',
     description: 'Modern e-commerce application.',
     technologies: ['Next.js', 'TypeScript', 'Zustand', 'Tailwind', 'Supabase'],
   },
@@ -26,5 +26,13 @@ export const projects = [
     description:
       'Showcasing key metrics like sales trends, category performance, customer locations, and user activity.',
     technologies: ['React', 'TypeScript', 'Recharts', 'MUI', 'Leaflet'],
+  },
+  {
+    title: 'Match Tracker',
+    link: 'https://match-tracker-vladnel.netlify.app/',
+    image: '/photos/qweqw.webp',
+    description:
+      'This project demonstrates fetching match data from an API, displaying match details, and using an accordion component to show additional information such as player statistics and team metrics.',
+    technologies: ['React', 'TypeScript', 'TanStack Query', 'Tailwind'],
   },
 ]
